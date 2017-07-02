@@ -11,4 +11,9 @@ export class HeroService {
     return Promise.resolve(HEROES);
   }
 
+  getHeroesSlow(): Promise<Hero[]> {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(this.getHeroes()), 2000);
+    })
+  }
 }
