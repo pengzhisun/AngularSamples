@@ -10,7 +10,7 @@ alias rewind="pushd . > /dev/null && root && . ./init_linux_env.sh && popd > /de
 alias root="cd $ROOT_DIR/"
 alias src="cd $SRC_ROOT"
 alias services="cd $SRC_ROOT/app/services/"
-alias componenets="cd $SRC_ROOT/app/componenets/"
+alias components="cd $SRC_ROOT/app/components/"
 alias modules="cd $SRC_ROOT/app/modules/"
 
 alias status="git status"
