@@ -1,11 +1,11 @@
-export ROOT_DIR=$(dirname $(readlink -f ${BASH_SOURCE[0]}))
+export ROOT_DIR=$(dirname $(greadlink -f ${BASH_SOURCE[0]}))
 
 export SRC_ROOT="$ROOT_DIR/src/"
 
 alias env_ver="echo v0.1"
 
-alias uinit="nano $ROOT_DIR/init_bash_env.sh"
-alias rewind="pushd . > /dev/null && root && . ./init_bash_env.sh && popd > /dev/null"
+alias uinit="nano $ROOT_DIR/init_mac_env.sh"
+alias rewind="pushd . > /dev/null && root && . ./init_mac_env.sh && popd > /dev/null"
 
 alias root="cd $ROOT_DIR/"
 alias src="cd $SRC_ROOT"
